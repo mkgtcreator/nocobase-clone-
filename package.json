@@ -1,14 +1,21 @@
 {
-  "name": "nocobase-deploy",
+  "name": "nocobase-app",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "start": "nocobase start",
-    "build": "nocobase build"
+    "start": "nocobase start --quickstart",
+    "build": "nocobase build",
+    "dev": "nocobase dev"
   },
   "dependencies": {
-    "@nocobase/core": "^1.0.0",
-    "@nocobase/plugin-backup": "^1.0.0",
-    "dotenv": "^16.0.0"
+    "@nocobase/core": "^2.0.0",
+    "@nocobase/server": "^2.0.0",
+    "@nocobase/database": "^2.0.0",
+    "@nocobase/plugin-backup": "^2.0.0",
+    "pg": "^8.11.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
+
